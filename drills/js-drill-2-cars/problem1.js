@@ -50,6 +50,39 @@ let inventory = [{ "id": 1, "car_make": "Lincoln", "car_model": "Navigator", "ca
     { "id": 50, "car_make": "Lincoln", "car_model": "Town Car", "car_year": 1999 }
 ];
 
-// ==== Problem #1 ====
-// The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by calling a function that will return the data for that car. Then log the car's year, make, and model in the console log in the format of:
-// "Car 33 is a *car year goes here* *car make goes here* *car model goes here*"
+// problem 1
+const result = inventory.filter((x) => x.id == 33);
+const output = "Car 33 is a " + result[0]['car_year'] + " " + result[0]['car_make'] + " " + result[0]['car_model'];
+console.log(result);
+
+// problem 3
+
+const result3 = inventory.reduce(function(acc, curr) {
+    acc.push(curr['car_model']);
+    return acc;
+}, []);
+
+const output3 = result.sort();
+console.log(result3);
+
+// problem 4
+const output4 = inventory.reduce(function(acc, curr) {
+    acc.push(curr['car_year']);
+    return acc;
+}, []);
+console.log(output4);
+
+// problem 5
+const output5 = inventory.reduce(function(acc, curr) {
+    if (curr['car_year'] < 2000) {
+        acc.push(curr['car_year']);
+    }
+    return acc;
+}, []);
+console.log(output5);
+
+// problem 6
+const output6 = inventory.filter((x) => x['car_make'] == "Audi" || x['car_make'] == "BMW");
+
+console.log(JSON.stringify(output));
+console.log(output6);
