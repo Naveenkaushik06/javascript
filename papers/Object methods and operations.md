@@ -1,5 +1,5 @@
 # Object methods and operations
-## Mutable
+##ss Mutable
 The mutable objects are objects whose value can be changed after initialization. We can change the object's values, such as field and states, after the object is created. For example, Java.util.Date, StringBuilder, StringBuffer, etc.
 
 The Getters and Setters ( get() and set() methods ) are available in mutable objects. The Mutable object may or may not be thread-safe.
