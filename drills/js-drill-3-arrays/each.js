@@ -4,7 +4,6 @@ const eachFunction = function(array, callBack) {
             callBack(array[index]);
         }
     } else {
-        return [];
     }
 }
 module.exports = eachFunction;

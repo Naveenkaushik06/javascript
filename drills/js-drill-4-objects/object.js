@@ -6,37 +6,7 @@ const testObject = { name: 'Bruce Wayne', age: 36, location: 'Gotham' }; // use 
 
 /*
     Create a function for each problem in a file called
-        keys.js
-        values.js
-        pairs.js
-    and so on in the root of the project.
-
-    Ensure that the functions in each file is exported and tested in its own file called
-        testKeys.js
-        testValues.js
-        testPairs.js
-    and so on in a folder called test.
-
-    Create a new git repo on gitlab for this project, ensure that you commit after you complete each problem in the project.
-    Ensure that the repo is a public repo.
-
-    When you are done, send the gitlab url to your mentor
-*/
-
-function keys(obj) {
-    // Retrieve all the names of the object's properties.
-    // Return the keys as strings in an array.
-    // Based on http://underscorejs.org/#keys
-}
-
-function values(obj) {
-    // Return all of the values of the object's own properties.
-    // Ignore functions
-    // http://underscorejs.org/#values
-}
-
-function mapObject(obj, cb) {
-    // Like map for arrays, but for objects. Transform the value
+        keys.jsconst testObject = { name: 'Bruce Wayne', age: 36, location: 'Gotham' }; 
     // of each property in turn by passing it to the callback function.
     // http://underscorejs.org/#mapObject
 }
